@@ -18,6 +18,11 @@ public class HelloFilter extends GenericFilterBean {
     @Autowired
     private HelloComponent component;
 
+    public HelloFilter() {
+        return;
+    }
+
+
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse,
                          FilterChain filterChain) throws IOException, ServletException {
