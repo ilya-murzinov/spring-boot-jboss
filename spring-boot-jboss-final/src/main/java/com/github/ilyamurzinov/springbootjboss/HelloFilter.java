@@ -13,15 +13,9 @@ import java.io.IOException;
 /**
  * @author Murzinov Ilya [murz42@gmail.com]
  */
-@Component
 public class HelloFilter extends GenericFilterBean {
     @Autowired
     private HelloComponent component;
-
-    public HelloFilter() {
-        return;
-    }
-
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse,
