@@ -43,6 +43,7 @@
             <groupId>org.jboss.as</groupId>
             <artifactId>jboss-as-web</artifactId>
             <version>7.1.1.Final</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 
