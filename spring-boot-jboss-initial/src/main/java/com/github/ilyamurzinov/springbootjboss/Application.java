@@ -10,7 +10,6 @@ import org.springframework.context.annotation.ImportResource;
  * @author Murzinov Ilya [murz42@gmail.com]
  */
 @SpringBootApplication
-@ImportResource("classpath:context.xml")
 public class Application extends SpringBootServletInitializer {
     public static void main(String[] args) {
         SpringApplication.run(Application.class);
