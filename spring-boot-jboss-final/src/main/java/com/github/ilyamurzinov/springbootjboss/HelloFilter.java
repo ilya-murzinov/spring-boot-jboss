@@ -1,7 +1,6 @@
 package com.github.ilyamurzinov.springbootjboss;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.web.filter.GenericFilterBean;
 
 import javax.servlet.FilterChain;
@@ -19,7 +18,7 @@ public class HelloFilter extends GenericFilterBean {
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse,
-                         FilterChain filterChain) throws IOException, ServletException {
+            FilterChain filterChain) throws IOException, ServletException {
         component.go();
         filterChain.doFilter(servletRequest, servletResponse);
     }
